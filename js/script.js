@@ -242,11 +242,11 @@ function switchLanguage(lang) {
     currentLanguage = lang;
     localStorage.setItem('language', lang);
 
-    // Check if we need to redirect to a different page
+    // Get current page info
     const currentPath = window.location.pathname;
     const currentPage = currentPath.split('/').pop();
 
-    // Handle page redirects for legal pages
+    // For legal pages, redirect to the corresponding language URL
     if (currentPage.includes('privacy') || currentPage.includes('terms') || currentPage.includes('subscription') || currentPage.includes('support')) {
         let targetPage = '';
 
@@ -260,14 +260,19 @@ function switchLanguage(lang) {
             targetPage = lang === 'en' ? 'support-en.html' : 'support.html';
         }
 
-        // Only redirect if we're not already on the correct page
-        if (targetPage && currentPage !== targetPage) {
+        // Always redirect to the target page (don't check if already on correct page)
+        if (targetPage) {
             window.location.href = targetPage;
             return;
         }
     }
 
     // For main page (index.html), update content dynamically
+    updatePageContent(lang);
+}
+
+// Function to update page content without redirecting
+function updatePageContent(lang) {
     // Update HTML lang attribute
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
 
@@ -326,8 +331,23 @@ function updateFooterLinks(lang) {
 
 // Initialize language on page load
 function initLanguage() {
-    const savedLanguage = localStorage.getItem('language') || 'zh';
-    switchLanguage(savedLanguage);
+    // Determine language based on current page URL
+    const currentPath = window.location.pathname;
+    const currentPage = currentPath.split('/').pop();
+
+    let pageLanguage = 'zh'; // default to Chinese
+
+    // If current page is an English page, set language to English
+    if (currentPage.includes('-en.html')) {
+        pageLanguage = 'en';
+    }
+
+    // Update current language and localStorage
+    currentLanguage = pageLanguage;
+    localStorage.setItem('language', pageLanguage);
+
+    // Update page content without redirecting
+    updatePageContent(pageLanguage);
 }
 
 // Smooth scrolling for navigation links
