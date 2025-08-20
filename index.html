@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="title">SmartMem - 智能记忆助手</title>
+    <meta name="description" data-i18n="meta_description" content="SmartMem是一款智能记忆助手APP，帮助您高效学习和记忆">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="images/logo.png" alt="SmartMem" class="logo-img">
+                <span class="logo-text" data-i18n="logo_text">智能记忆助手</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link" data-i18n="nav_home">首页</a>
+                <a href="#features" class="nav-link" data-i18n="nav_features">功能</a>
+                <a href="#download" class="nav-link" data-i18n="nav_download">下载</a>
+                <a href="support.html" class="nav-link" data-i18n="nav_support">支持</a>
+                <div class="language-switcher">
+                    <button class="lang-btn" onclick="switchLanguage('zh')">中文</button>
+                    <button class="lang-btn" onclick="switchLanguage('en')">EN</button>
+                </div>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title" data-i18n="hero_title">智能记忆，高效学习</h1>
+                <p class="hero-subtitle" data-i18n="hero_subtitle">SmartMem运用先进的记忆算法，帮助您更好地学习和记忆知识</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary" data-i18n="btn_download">立即下载</a>
+                    <a href="#features" class="btn btn-secondary" data-i18n="btn_learn_more">了解更多</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/app-preview.png" alt="SmartMem App Preview" class="app-preview">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title" data-i18n="features_title">核心功能</h2>
+            <p class="section-subtitle" data-i18n="features_subtitle">为您提供最佳的学习体验</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="icon">🧠</span>
+                    </div>
+                    <h3 data-i18n="feature1_title">智能算法</h3>
+                    <p data-i18n="feature1_desc">基于艾宾浩斯遗忘曲线的智能复习提醒</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="icon">📊</span>
+                    </div>
+                    <h3 data-i18n="feature2_title">学习统计</h3>
+                    <p data-i18n="feature2_desc">详细的学习进度和成果统计分析</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="icon">☁️</span>
+                    </div>
+                    <h3 data-i18n="feature3_title">云端同步</h3>
+                    <p data-i18n="feature3_desc">多设备数据同步，随时随地学习</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="icon">🎨</span>
+                    </div>
+                    <h3 data-i18n="feature4_title">个性化</h3>
+                    <p data-i18n="feature4_desc">多种主题和个性化设置选项</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="icon">🔔</span>
+                    </div>
+                    <h3 data-i18n="feature5_title">智能提醒</h3>
+                    <p data-i18n="feature5_desc">基于遗忘曲线的智能复习提醒系统</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <span class="icon">📱</span>
+                    </div>
+                    <h3 data-i18n="feature6_title">小组件支持</h3>
+                    <p data-i18n="feature6_desc">桌面小组件，随时查看学习进度</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="section-title" data-i18n="download_title">立即下载</h2>
+            <p class="section-subtitle" data-i18n="download_subtitle">在您的设备上开始智能学习之旅</p>
+            <div class="download-buttons">
+                <a href="#" class="download-btn">
+                    <img src="images/app-store.svg" alt="Download on App Store">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SmartMem</h3>
+                    <p data-i18n="footer_desc">智能记忆助手，让学习更高效</p>
+                </div>
+                <div class="footer-section">
+                    <h4 data-i18n="footer_links">快速链接</h4>
+                    <ul>
+                        <li><a href="privacy.html" data-i18n="footer_privacy">隐私政策</a></li>
+                        <li><a href="terms.html" data-i18n="footer_terms">服务条款</a></li>
+                        <li><a href="subscription.html" data-i18n="footer_subscription">订阅协议</a></li>
+                        <li><a href="support.html" data-i18n="footer_support">技术支持</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SmartMem. <span data-i18n="footer_rights">保留所有权利</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
