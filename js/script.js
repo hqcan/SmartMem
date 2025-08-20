@@ -79,7 +79,42 @@ const translations = {
         guide_themes: "个性化主题",
         guide_themes_desc: "选择您喜欢的主题风格，让学习界面更符合个人喜好，提升使用体验。",
         guide_backup: "数据备份",
-        guide_backup_desc: "通过iCloud自动备份学习数据，换设备时数据无缝同步，学习进度永不丢失。"
+        guide_backup_desc: "通过iCloud自动备份学习数据，换设备时数据无缝同步，学习进度永不丢失。",
+        // Privacy Policy translations
+        privacy_title: "隐私政策 - 智能记忆助手",
+        privacy_meta_desc: "SmartMem隐私政策，了解我们如何保护您的个人信息",
+        privacy_intro_title: "引言",
+        privacy_intro_content: "SmartMem（\"我们\"、\"我们的\"或\"本应用\"）非常重视您的隐私。本隐私政策说明了我们的数据处理方式。SmartMem是一款完全本地化的应用，我们不收集、存储或传输您的任何个人信息。",
+        privacy_no_collection_title: "我们不收集任何信息",
+        privacy_no_collection_content: "SmartMem设计为完全本地化的应用程序，这意味着：",
+        privacy_no_personal: "我们不收集任何个人身份信息",
+        privacy_no_account: "应用无需注册账户或提供个人信息",
+        privacy_no_analytics: "我们不收集使用统计或分析数据",
+        privacy_no_tracking: "我们不跟踪您的使用行为",
+        privacy_no_ads: "应用内无广告，无第三方跟踪",
+        privacy_local_storage_title: "本地数据存储",
+        privacy_local_storage_content: "您的所有学习数据都安全存储在您的设备上：",
+        privacy_local_only: "所有学习内容和进度仅存储在您的设备本地",
+        privacy_icloud_backup: "通过iOS系统的iCloud备份功能自动备份（由Apple管理）",
+        privacy_no_server: "我们没有服务器存储您的任何数据",
+        privacy_full_control: "您完全控制自己的数据",
+        privacy_no_sharing_title: "无信息共享",
+        privacy_no_sharing_content: "由于我们不收集任何信息，因此：",
+        privacy_no_third_party: "我们不与任何第三方共享数据",
+        privacy_no_selling: "我们不出售任何用户信息",
+        privacy_no_marketing: "我们不用于营销目的",
+        privacy_apple_only: "订阅信息仅由Apple处理和管理",
+        privacy_security_title: "数据安全",
+        privacy_security_content: "由于所有数据都存储在您的设备本地，您的信息安全取决于您设备的安全设置。我们建议保持设备更新并使用适当的安全措施。",
+        privacy_rights_title: "您的权利",
+        privacy_rights_content: "由于我们不收集任何个人信息，传统的数据权利（访问、更正、删除）不适用。但是，您对存储在设备本地的所有数据拥有完全控制权。",
+        privacy_changes_title: "政策变更",
+        privacy_changes_content: "我们可能会不时更新本隐私政策。重大变更将通过应用内通知或电子邮件通知您。",
+        privacy_subscription_title: "订阅服务信息",
+        privacy_subscription_content: "SmartMem提供年度订阅服务：",
+        pricing_plans_title: "订阅计划和价格",
+        pricing_yearly: "年度订阅：¥128/年 ($19.9/年)",
+        pricing_note: "* 价格可能因地区而异，以App Store显示的当地货币价格为准。订阅将自动续费，可随时取消。订阅信息完全由Apple管理，我们无法访问您的付费信息。"
     },
     en: {
         title: "SmartMem - Intelligent Memory Assistant",
@@ -160,7 +195,42 @@ const translations = {
         guide_themes: "Personalized Themes",
         guide_themes_desc: "Choose your favorite theme style to make the learning interface more suited to your personal preferences and enhance user experience.",
         guide_backup: "Data Backup",
-        guide_backup_desc: "Automatically backup learning data through iCloud, seamlessly sync data when switching devices, never lose learning progress."
+        guide_backup_desc: "Automatically backup learning data through iCloud, seamlessly sync data when switching devices, never lose learning progress.",
+        // Privacy Policy translations
+        privacy_title: "Privacy Policy - SmartMem",
+        privacy_meta_desc: "SmartMem Privacy Policy - Learn how we protect your personal information",
+        privacy_intro_title: "Introduction",
+        privacy_intro_content: "SmartMem (\"we\", \"our\", or \"this app\") values your privacy. This privacy policy explains our data processing practices. SmartMem is a completely local app, and we do not collect, store, or transmit any of your personal information.",
+        privacy_no_collection_title: "We Do Not Collect Any Information",
+        privacy_no_collection_content: "SmartMem is designed as a completely local application, which means:",
+        privacy_no_personal: "We do not collect any personally identifiable information",
+        privacy_no_account: "The app does not require account registration or personal information",
+        privacy_no_analytics: "We do not collect usage statistics or analytics data",
+        privacy_no_tracking: "We do not track your usage behavior",
+        privacy_no_ads: "No ads in the app, no third-party tracking",
+        privacy_local_storage_title: "Local Data Storage",
+        privacy_local_storage_content: "All your learning data is securely stored on your device:",
+        privacy_local_only: "All learning content and progress is stored locally on your device only",
+        privacy_icloud_backup: "Automatically backed up through iOS system's iCloud backup feature (managed by Apple)",
+        privacy_no_server: "We have no servers storing any of your data",
+        privacy_full_control: "You have complete control over your data",
+        privacy_no_sharing_title: "No Information Sharing",
+        privacy_no_sharing_content: "Since we do not collect any information, therefore:",
+        privacy_no_third_party: "We do not share data with any third parties",
+        privacy_no_selling: "We do not sell any user information",
+        privacy_no_marketing: "We do not use data for marketing purposes",
+        privacy_apple_only: "Subscription information is only processed and managed by Apple",
+        privacy_security_title: "Data Security",
+        privacy_security_content: "Since all data is stored locally on your device, your information security depends on your device's security settings. We recommend keeping your device updated and using appropriate security measures.",
+        privacy_rights_title: "Your Rights",
+        privacy_rights_content: "Since we do not collect any personal information, traditional data rights (access, correction, deletion) are not applicable. However, you have complete control over all data stored locally on your device.",
+        privacy_changes_title: "Policy Changes",
+        privacy_changes_content: "We may update this privacy policy from time to time. Significant changes will be communicated through in-app notifications or email.",
+        privacy_subscription_title: "Subscription Service Information",
+        privacy_subscription_content: "SmartMem offers annual subscription service:",
+        pricing_plans_title: "Subscription Plans and Pricing",
+        pricing_yearly: "Annual Subscription: ¥128/year ($19.9/year)",
+        pricing_note: "* Prices may vary by region. Actual prices are subject to App Store display in local currency. Subscriptions auto-renew and can be cancelled anytime. Subscription information is completely managed by Apple, and we cannot access your payment information."
     }
 };
 
@@ -197,6 +267,7 @@ function switchLanguage(lang) {
         }
     }
 
+    // For main page (index.html), update content dynamically
     // Update HTML lang attribute
     document.documentElement.lang = lang === 'zh' ? 'zh-CN' : 'en';
 
@@ -219,7 +290,10 @@ function switchLanguage(lang) {
     document.querySelectorAll('.lang-btn').forEach(btn => {
         btn.classList.remove('active');
     });
-    document.querySelector(`[onclick="switchLanguage('${lang}')"]`).classList.add('active');
+    const activeBtn = document.querySelector(`[onclick="switchLanguage('${lang}')"]`);
+    if (activeBtn) {
+        activeBtn.classList.add('active');
+    }
 
     // Update footer links based on language
     updateFooterLinks(lang);
